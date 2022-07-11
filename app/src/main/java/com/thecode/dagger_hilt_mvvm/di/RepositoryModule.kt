@@ -15,14 +15,20 @@ import javax.inject.Singleton
 @Module
 object RepositoryModule {
 
-    @Singleton
-    @Provides
-    fun provideMainRepository(
-        blogDao: BlogDao,
-        blogApi: BlogApi,
-        cacheMapper: CacheMapper,
-        blogMapper: BlogMapper
-    ): MainRepository {
-        return MainRepository(blogDao, blogApi, cacheMapper, blogMapper)
-    }
+//    @Singleton
+//    @Provides
+//    fun provideBlogMapper(): BlogMapper {
+//        return BlogMapper()
+//    }
+
+//    @Singleton
+//    @Provides
+//    fun provideMainRepository(
+//        blogDao: BlogDao,
+//        blogApi: BlogApi,
+//        cacheMapper: CacheMapper,
+//        blogMapper: BlogMapper
+//    ): MainRepository {
+//        return MainRepository(blogDao, blogApi, cacheMapper, blogMapper)
+//    }
 }

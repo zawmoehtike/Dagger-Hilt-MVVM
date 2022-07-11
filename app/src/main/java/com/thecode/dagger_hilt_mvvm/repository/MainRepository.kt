@@ -9,8 +9,9 @@ import com.thecode.dagger_hilt_mvvm.util.DataState
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
+import javax.inject.Inject
 
-class MainRepository
+class MainRepository @Inject
 constructor(
     private val blogDao: BlogDao,
     private val blogApi: BlogApi,
